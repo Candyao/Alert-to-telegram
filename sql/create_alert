@@ -1,0 +1,15 @@
+ CREATE TABLE `alert` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `channel_id` int NOT NULL DEFAULT '1',
+  `resource` varchar(100) NOT NULL DEFAULT '',
+  `severity` varchar(20) NOT NULL DEFAULT '',
+  `summary` varchar(255) NOT NULL DEFAULT '',
+  `description` varchar(255) NOT NULL DEFAULT '',
+  `alert_name` varchar(100) NOT NULL DEFAULT '',
+  `type` char(10) DEFAULT NULL,
+  `start_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
