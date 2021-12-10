@@ -1,0 +1,10 @@
+package util
+const (
+	SUCCESS        = 200
+	ERROR          = 500
+	INVALID_PARAMS = 400
+
+	ERROR_ADD_AlERT_FAIL    = 10000
+	ERROR_SEND_MSG = 10001
+	ERROR_BIND_JSON =10002
+)

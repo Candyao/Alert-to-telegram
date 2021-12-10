@@ -1,0 +1,16 @@
+<b>Alarm NAME: </b>{{ .PolicyName }}
+
+<b>Project for: </b>
+Project Name = <code>{{.ScopingProjectId}}</code>
+{{if eq .State "open"}}
+    Status: <b>FIRING ❌  </b>
+{{end -}}
+
+{{if eq .State "close"}}
+    Status: <b>RESOLVED ✅  </b>
+{{end }}
+<b>Active Alert List:</b>
+   告警等级: warning ⚠️
+   告警时间: {{ .StartedAt | str_FormatDate }}
+   告警资源: {{ .ResourceName }}
+   告警摘要: {{ .Summary }}

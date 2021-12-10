@@ -1,0 +1,9 @@
+service:
+  port: ":8660"
+  token: "<token>"
+app:
+  chat_id: "<chart_id>"
+  bot_token: "<bot_token>"
+time_zone: "Asia/Shanghai"
+template_path: "./tmpl"
+time_outdata: "2006-01-02 15:04:05"
